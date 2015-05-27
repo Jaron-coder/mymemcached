@@ -7,8 +7,6 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import javax.annotation.Resource;
-
 /**
  * Created by zhanglong on 2015/5/26.
  */
@@ -45,14 +43,14 @@ public class UserDaoTest {
     public void updateUserTest() {
         User user = new User();
         user.setUserId("1");
-        user.setUsername("zhang-aaaaa");
+        user.setUsername("zhang-qqq");
         user.setPassword("123456789");
         iUserDao.updateUser(user);
     }
 
     @Test
     public void getUserTest() {
-       User user= iUserDao.getById("1");
+       User user= iUserDao.getById("2");
         System.out.print("从缓存中获取的值为："+user.getUsername());
     }
     @Test
