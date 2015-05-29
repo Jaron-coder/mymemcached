@@ -42,3 +42,19 @@ aws-elasticache:
           <version>3.5.0</version>
         </dependency>
 It uses elasticache-java-cluster-client 1.0.61.0.
+
+#Configuration
+You will need to inform your ApplicationContext of Simple-Spring-Memcached's configuration. This is done with an import configuration directive:
+
+><import resource="simplesm-context.xml" />
+The xml file is available in simple-spring-memcached-3.5.0.jar.
+
+Simple-Spring-Memcached also requires an annotation to enable AOP access, which in turn requires the AOP namespace being defined:
+><beans xmlns="http://www.springframework.org/schema/beans"
+     xmlns:aop="http://www.springframework.org/schema/aop"
+     xsi:schemaLocation="http://www.springframework.org/schema/aop
+               http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+
+   <aop:aspectj-autoproxy />
+
+ </beans>
