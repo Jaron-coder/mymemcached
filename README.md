@@ -13,6 +13,7 @@ sIn addition to the Simple-Spring-Memcached JAR files, the following libraries m
 2. Two AspectJ libraries are also required, and this project was built against the 1.6.8 versions. These libraries may have version dependencies with your Spring version, so you are free to add whatever versions are necessary to the classpath.
 3. This project uses Simple Logging Facade for Java (SLF4J), and is built against SLF4J, though you are welcome to provide any other implementation.
 Next step is to choose one of the available java memcached providers. Using Simple Spring Memcached requires adding only one extra dependency to your project's pom (one of the below providers).
+
 spymemcached
 ------
         For spymemcached add dependency:
@@ -21,7 +22,7 @@ spymemcached
           <artifactId>spymemcached-provider</artifactId>
           <version>3.5.0</version>
         </dependency>
-        It uses spymemcached 2.11.3.
+It uses spymemcached 2.11.3.
 
 xmemcached:
 ------
@@ -31,7 +32,7 @@ xmemcached:
           <artifactId>xmemcached-provider</artifactId>
           <version>3.5.0</version>
         </dependency>
-        It uses xmemcached 2.0.0.
+It uses xmemcached 2.0.0.
 
 aws-elasticache:
 ------
