@@ -1,4 +1,4 @@
-# mymemcached 与Spring整合 Simple Spring Memcached
+# memcached 与Spring整合 Simple Spring Memcached
 Memcached  
 Introduction
 Dependencies
