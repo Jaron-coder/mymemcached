@@ -1,9 +1,7 @@
 # memcached 与Spring整合 Simple Spring Memcached
 
 #Introduction
-     Distributed caching can be a big, hairy, intricate, and complex proposition when using it extensively.Simple-Spring-Memcached (SSM) attempts to simplify implementation for several basic use cases.
-This project enables caching in Spring-managed beans, by using Java 5 Annotations and Spring/AspectJ AOP on top of the spymemcached, xmemcached or Amazon ElastiCache Cluster Client for Java.
-Using Simple-Spring-Memcached requires only a little bit of configuration and the addition of some specific annotations on the methods whose output or input is being cached.
+     Distributed caching can be a big, hairy, intricate, and complex proposition when using it extensively.Simple-Spring-Memcached (SSM) attempts to simplify implementation for several basic use cases.This project enables caching in Spring-managed beans, by using Java 5 Annotations and Spring/AspectJ AOP on top of the spymemcached, xmemcached or Amazon ElastiCache Cluster Client for Java.Using Simple-Spring-Memcached requires only a little bit of configuration and the addition of some specific annotations on the methods whose output or input is being cached.
 
 #Dependencies
     The first thing you'll need, of course, is at least one running Memcached server. (Installation and usage instructions may be found on the memcached project page.)
